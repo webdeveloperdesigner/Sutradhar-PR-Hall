@@ -33,9 +33,11 @@ Here, contributors can showcase their skills, contribution journey, active strea
 Getting listed on the official Hall of Fame is super easy and 100% beginner-safe. Follow these simple steps:
 
 ### Step 1: Fork the Repository
+
 Click the **Fork** button at the top-right of the GitHub repository to create a copy in your own GitHub account.
 
 ### Step 2: Use the Profile Builder Wizard
+
 1. Run the project locally (see [Local Development](#-local-development)) or visit the live site.
 2. Click **Create Profile** in the navigation bar to open the builder.
 3. Fill in your details:
@@ -43,19 +45,23 @@ Click the **Fork** button at the top-right of the GitHub repository to create a 
    - A custom display name & role
    - A personalized bio (or select a premium pre-made **Developer Archetype**!)
    - Select your preferred theme color accent & skills tags
-4. Once satisfied, click the **Copy JSON** button in the *Terminal Output Code Card* on the right!
+4. Once satisfied, click the **Copy JSON** button in the _Terminal Output Code Card_ on the right!
 
 ### Step 3: Create Your Profile File
+
 In your forked repository, navigate to:
+
 ```bash
 src/contributors/
 ```
+
 Create a new file named exactly `[your-github-username].json` (e.g. `octocat.json`) and paste the copied JSON contents inside.
 
 > [!IMPORTANT]  
 > Only write/edit this single file! Do not modify any other codebase structures. This ensures your pull request is merged immediately and automatically.
 
 ### Step 4: Create a Pull Request (PR)
+
 1. Commit your changes and push them to your fork.
 2. On GitHub, click **New Pull Request**.
 3. Submit your PR with a title like `feat: add [your-username] contributor profile`.
@@ -68,39 +74,42 @@ Create a new file named exactly `[your-github-username].json` (e.g. `octocat.jso
 Follow these steps to run the application locally on your machine:
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed.
 
-### 1. Clone your fork
-```bash
-git clone https://github.com/YOUR-USERNAME/pr-hall.git
-cd pr-hall
-```
+Ensure you have [Node.js](https://nodejs.org/) installed.
 
-### 2. Install dependencies
-```bash
-npm install
-```
+### Quick Start (Run Locally)
 
-### 3. Start the local development server
-```bash
-npm start
-```
-Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
+If you already have this repository on your local machine:
 
-### 4. Build for production
-```bash
-npm run build
-```
-This builds and optimizes the application for production deployment inside the `build` folder.
+1. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**:
+
+   ```bash
+   npm start
+   ```
+
+   _The application will automatically open at [http://localhost:3000](http://localhost:3000)._
+
+3. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
 ---
 
 ## 🛡️ Contribution Guidelines & Safety
 
 To keep the platform safe and friendly for everyone:
+
 - **Only edit your own file** under `src/contributors/[your-username].json`.
 - **Do not include private information** like emails or passwords in your JSON.
 - **Ensure JSON formatting is correct** (the builder ensures valid formatting automatically!).
 - **Be respectful and kind** in your bio content.
 
 Happy hacking, and welcome to the open-source community! 🚀
+
